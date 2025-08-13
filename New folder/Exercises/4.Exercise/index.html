@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Exercise Multi color website</title>
+    <style>
+        :root{
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --tertiary-color: #9b59b6;
+            --background-color: #f9f9f9;
+        }
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 45px;
+            margin: 13px;
+            color :bisque;
+        }
+        nav ul li :first-child{
+            background-color: var(--secondary-color);
+            list-style: none;
+            display: inline;
+            padding: 45px;
+            margin: 13px;
+            color :bisque;
+        }
+        footer{
+            background-color: var(--tertiary-color);
+            align-items: end;
+        }
+        body{
+            background-color: var(--background-color);
+        }
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <p>This is a product</p>
+    <footer>Develop a multi color Css Nav bar</footer>
+
+</body>
+</html>

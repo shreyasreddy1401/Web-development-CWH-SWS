@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. Exercise Custom layout for a website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            top:0;
+            position: sticky;
+
+        }
+        nav{
+            background-color: purple;
+            height: 83px;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 45px;
+            margin: 13px;
+            color :bisque;
+        }
+         nav ul li :first-child{
+            background-color: purple;
+            list-style: none;
+            display: inline;
+            padding: 45px;
+            margin: 13px;
+            color :bisque;
+        }
+        main{
+            background-color: black;
+            color: white;
+            padding: 34px;
+        }
+        .container{
+            background-color: green;
+            margin: 12px 34px;
+            padding: 55px 23px;
+            text-align: center;
+            
+        }
+        .box1{
+            background-color: palevioletred;  
+            height: 70vh;
+            width: 45%; 
+            display: inline-block; 
+            margin: 0px 12px;
+        }
+        .box2{
+            background-color: slateblue;
+            height: 70vh;
+            width: 45%;
+            display: inline-block;
+            margin: 0px 12px;
+        }
+        .text-box{
+            padding: 34px;
+            margin: 0 34vw;
+            border: 3px solid navajowhite;
+            border-radius: 13px;
+            text-align: center;
+        }
+        .text-box:hover{
+            background-color: cyan;
+            cursor: pointer;
+            font-size: larger;
+            color: purple;
+        }
+        .orange-box{
+            height: 34px;
+            width: 34px;
+            background-color: orangered;
+            position: fixed;
+            bottom: 12px;
+            right: 23px;
+            border-radius: 60px;
+        }
+        img{
+            height: 34px;
+            width: 34px;
+            position: fixed;
+            bottom: 12px;
+            right: 23px;
+            border-radius: 60px;
+        }
+        footer{
+            height: 100px;
+            background-color: bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box1">
+
+            </div>
+            <div class="box2">
+
+            </div>
+        </div>
+        <div class="text-box">
+            <p>Welcome to sigma web dev</p>
+        </div>
+        <div class="orange-box">
+            <img src="https://static.vecteezy.com/system/resources/previews/015/481/083/large_2x/cwh-letter-logo-design-on-white-background-cwh-creative-initials-circle-logo-concept-cwh-letter-design-vector.jpg" alt="">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

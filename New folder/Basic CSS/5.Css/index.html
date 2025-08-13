@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.CSS - Sizing unit</title>
+    <link rel="icon" href="https://th.bing.com/th?q=Code+with+Harry+YouTube+Icon&w=120&h=120&c=1&rs=1&qlt=90&cb=1&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            width: 80vw;
+            height: 20vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        .container{
+            border: 2px solid black;
+            width: 80vw;
+            font-size: 15px;
+            height: 30vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+        }
+        .container p{
+            text-align: center;
+            font-size: 3em;
+            border: 2px solid blue;
+        }
+        .container p p1{
+            border: 10px solid red;
+            width: 50%;
+        }
+        .mycont{
+            border: 2px solid black;
+            margin: auto;
+            min-height: 80vh;
+            box-sizing: border-box;
+            color: yellow;
+            background-color: green;
+            font-size: 23px;
+            width: 100vmin;
+        }
+        .mybox{
+            border: 2px solid black;
+            border-radius: 30px;
+            height: 20vh;
+            width: 20vh;
+            text-align: center;
+            font-size:15px ;
+            box-sizing: border-box;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>this is a box</p>
+    </div>
+    <div class="container">
+        <p>container
+            <div class="p1">span Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati vero doloribus soluta ratione officia numquam in perferendis delectus fuga atque perspiciatis cum sint laudantium odio iste quisquam adipisci, laborum ducimus sequi! Officia, ad.</div>
+        </p>
+        <h5>3em defines 3 times the given value in class selector = 15px X 3</h5>
+    </div>
+    <br>
+    <div class="mycont">
+        im another container
+    </div>
+    <br><br>
+    <div class="mybox" style = "background-color:cadetblue" >
+        <h5>Em</h5>
+        <p>Relative to the font size of the parent element. Eg: 5em means the size would be 5 times the current font size</p>
+    </div>
+    <br>
+    <div class="mybox" style="background-color: red ;">
+        <h5>Rem</h5>
+        <p>Relative to the font size of the root element.</p>
+    </div>
+    <br>
+    <div class="mybox"style="background-color:aquamarine">
+        <h5>ex</h5>
+        <p>Relative to X height of the existing font</p>
+    </div>
+    <br>
+    <div class="mybox" style="background-color: mediumorchid;">
+        <h5>ch</h5>
+        <p>Relative to the width/ radius of the character “0”.</p>
+    </div>
+    <br>
+    <div class="mybox" style="background-color: yellow;">
+        <h5>vw</h5>
+        <p>Relative to 1% of the width of the viewport. (Viewport is the area of the website visible to the user.)</p>
+    </div>
+    <br>
+    <div class="mybox" style="background-color: purple;">
+        <h5>vh</h5>
+        <p>Relative to 1% of the height of the viewport</p>
+    </div>
+    <br>
+    <div class="mybox" style="background-color: chocolate;">
+        <h5>%</h5>
+        <p>Relative to the parent element’s width or height</p>
+    </div>
+    <br>
+</body>
+</html>
