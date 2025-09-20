@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce animation</title>
+    <style>
+        /* .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://www.shutterstock.com/image-photo/green-meadows-blue-sky-clouds-260nw-1726497376.jpg);
+            width: 80vw;
+            height: 80vh;
+            background-size: cover;
+            margin: 90px 90px;
+            padding: 40px;
+            border: 7px solid black;
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            background-image: url(https://m.media-amazon.com/images/I/61IkrxQ9p8L._UF1000,1000_QL80_.jpg);
+            background-size: cover;
+            animation: animateX 3s linear infinite, animateY 1s ease-out infinite alternate;
+        }
+
+        @keyframes animateX {
+          from{
+            left:0;
+          }
+          to{
+            left:80;
+          }
+
+        }
+        @keyframes animateY {
+          from{
+            top:0;
+          }
+          to{
+            top:80px;
+          }
+        } */
+        
+        .ball {
+            width: 90px;
+            height: 90px;
+            background-color: red;
+            border-radius: 50%;
+            background-image: url(https://m.media-amazon.com/images/I/61IkrxQ9p8L._UF1000,1000_QL80_.jpg);
+            background-size: cover;
+            position: absolute;
+            bottom: 10;
+            left: 0;   
+            animation: animateX 8s linear infinite, animateY 1s ease-out infinite alternate;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(https://www.shutterstock.com/image-photo/green-meadows-blue-sky-clouds-260nw-1726497376.jpg);
+            width: 80vw;
+            height: 80vh;
+            background-size: cover;
+            margin: 90px 90px;
+            padding: 40px;
+            border: 7px solid black;
+        }
+
+        @keyframes animateX {
+            from{
+                left: 5%;
+            }
+            to{
+                left: 90%;
+            }
+        }
+
+        @keyframes animateY {
+           from{
+                bottom: 0;
+            }
+            to{
+                bottom: 85%;
+            }
+        }
+ 
+    </style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
