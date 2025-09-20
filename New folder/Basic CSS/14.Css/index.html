@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14Css - Transition</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 50vh;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+            /* transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s; */
+            transition: all 4s ease-in-out 1s /* shorthand for the above properties */;
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: slateblue ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html>

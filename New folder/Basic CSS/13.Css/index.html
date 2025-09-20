@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.Css - Css Transformations</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: bisque;
+            border: 2px solid black;
+            /*transform: rotate(40deg);*//* Rotates the box by 40 degrees */
+            /*transform: translateX(100px);*/ /* Moves the box 100px to the right */
+            /*transform: translateY(100px);*/ /* Moves the box 100px down */
+            /*transform: translate(100px, 100px);*/ /* Moves the box 100px to the right and 100px down */
+            /*transform: scale(2);*/ /* Scales the box to double its size */
+            /*transform: turn(rotate(0.25 turn));*/ /* Rotates the box by 90 degrees (0.25 of a full turn) */
+            /*transform: rotateX('96deg');*/ /* Rotates the box around the X-axis by 96 degrees */
+            /*transform: scale(1.5);*/ /* Scales the box to 1.5 times its original size */
+            /*transform: scaleY(2);*/ /* Scales the box vertically to double its size */
+            /*transform: scaleX(2);*/ /* Scales the box horizontally to double its  size */
+            /*transform: skew(20deg, 10deg);*/ /* Skews the box by 20 degrees horizontally and 10 degrees vertically */
+            /*transform:translateX(100px) translateY(100px) rotate(40deg) scale(1.5) skew(20deg, 10deg);*/ /* Combines multiple transformations: moves the box 100px right, 100px down, rotates it by 40 degrees, scales it to 1.5 times its size, and skews it by 20 degrees horizontally and 10 degrees vertically */
+            /*transform: perspective(500px);*/ /* Applies a perspective of 500px to the box */
+            /*transform: perspective(500px) translateX(100px);*/ /* Applies a perspective of 500px and moves the box 100px to the right */
+            /*transform: perspective(500px) translateY(100px);*/ /* Applies a   perspective of 500px and moves the box 100px down */
+            /*transform: perspective(500px) translate(100px, 100px);*/ /* Applies a perspective of 500px and moves the box 100px to the right and 100px down */
+            /*transform: perspective(500px) rotate(40deg);*/ /* Applies a perspective of 500px and rotates the box by 40 degrees */
+            /*transform: perspective(500px) rotateY(45deg);*/ /* Applies a perspective of 500px and rotates the box around the Y-axis by 45 degrees */
+            /*transform: perspective(500px) rotateX(45deg);*/ /* Applies a perspective of 500px and rotates the box around the X-axis by 45 degrees */
+            /*transform: perspective(500px) rotateZ(45deg);*/ /* Applies a perspective of 500px and rotates the box around the Z-axis by 45 degrees */
+            /*transform: perspective(500px) translateZ(100px);*/ /* Applies a perspective of 500px and moves the box 100px towards the viewer */
+            /*transform: perspective(500px) scale(1.5);*/ /* Applies a perspective of 500px and scales the box to 1.5 times its original size */
+            /*transform: perspective(500px) skew(20deg, 10deg);*/ /* Applies a perspective of 500px and skews the box by 20 degrees horizontally and 10 degrees vertically */
+            transform: origin center; /* Sets the origin of the transformation to the center of the box */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            height: 80vh;
+            width: 100vw;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
